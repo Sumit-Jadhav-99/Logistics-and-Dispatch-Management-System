@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/auth";
+const API_URL = "https://logistics-and-dispatch-management-system.onrender.com/api/auth";
 
 export const loginUser = async (data) => {
   const response = await axios.post(
