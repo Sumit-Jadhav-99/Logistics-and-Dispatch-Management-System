@@ -1,0 +1,1531 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #0F172A;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* .navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#172554;
+}
+
+.login-btn{
+    background:#7C3AED;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+}
+
+.hero{
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#CBD5E1;
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.hero-btn{
+    background:#8B5CF6;
+    color:white;
+    border:none;
+    padding:14px 28px;
+    border-radius:10px;
+}
+
+.features{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:50px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#1E293B;
+    width:300px;
+    padding:25px;
+    border-radius:15px;
+}
+
+.card h3{
+    margin-bottom:15px;
+} */
+
+
+/* ========= LANDING PAGE ========== */
+
+.landing-page {
+    background: #0F172A;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    position: sticky;
+    top: 0;
+    background: #0F172A;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #7C3AED;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+}
+
+.login-btn {
+    background: #7C3AED;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: 68px;
+    line-height: 1.2;
+}
+
+.hero p {
+    margin-top: 25px;
+    font-size: 20px;
+    color: #CBD5E1;
+    max-width: 900px;
+}
+
+.hero-buttons {
+    margin-top: 35px;
+    display: flex;
+    gap: 15px;
+}
+
+.primary-btn {
+    background: #7C3AED;
+    color: white;
+    border: none;
+    margin: 15px auto;
+    padding: 14px 25px;
+    border-radius: 10px;
+}
+
+.secondary-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid #7C3AED;
+    margin: 15px auto;
+    padding: 14px 25px;
+    border-radius: 10px;
+}
+
+.stats-section {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 60px;
+}
+
+.stat-card {
+    background: #1E293B;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.stat-card h2 {
+    color: #7C3AED;
+    margin-bottom: 10px;
+}
+
+.features-section,
+.workflow-section,
+.why-section {
+    padding: 80px 60px;
+}
+
+.features-section h2,
+.workflow-section h2,
+.why-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.features-grid,
+.why-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.feature-card,
+.why-card {
+    background: #1E293B;
+    padding: 25px;
+    border-radius: 14px;
+}
+
+.workflow {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.workflow div {
+    background: #1E293B;
+    padding: 15px 25px;
+    border-radius: 12px;
+}
+
+.cta {
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.footer {
+    background: #1E293B;
+    text-align: center;
+    padding: 40px;
+}
+
+@media(max-width:768px) {
+
+    .navbar {
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+}
+
+/* login css */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #1E293B;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.login-card input {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+}
+
+.login-card button {
+    padding: 12px;
+    background: #7C3AED;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.login-card button:hover {
+    background: #8B5CF6;
+}
+
+.back-home {
+    color: #7C3AED;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-align: center;
+    padding: 12px;
+    background: #7C3AED;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.back-home:hover {
+    background: #8B5CF6;
+}
+
+/* sidebar css */
+.sidebar {
+    width: 250px;
+    background: #172554;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar h2 {
+    background: #7C3AED;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.sidebar a {
+    color: white;
+}
+
+.sidebar a:hover {
+    color: #8B5CF6;
+    font-weight: 600;
+
+}
+
+.sidebar button {
+    background: #7C3AED;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.sidebar button:hover {
+    background: #8B5CF6;
+    font-weight: 600;
+
+}
+
+.module-card {
+    background: #1E293B;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #312E81;
+    margin-bottom: 20px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(2, 1fr);
+    gap: 15px;
+}
+
+.input {
+    background: #0F172A;
+    border: 1px solid #475569;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.primary-btn {
+    background: #7C3AED;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+}
+
+.primary-btn:hover {
+    background: #8B5CF6;
+}
+
+
+/* ===========================
+   DASHBOARD
+=========================== */
+
+.dashboard-header {
+    margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+    font-size: 34px;
+    color: white;
+}
+
+.dashboard-header * {
+    margin-top: 8px;
+    color: #98a3b8;
+}
+
+.dashboard-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.dashboard-card {
+
+    background: #1e293b;
+
+    border: 1px solid #334155;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    transition: .3s;
+}
+
+.dashboard-card:hover {
+    transform: transateY(-4px);
+}
+
+.dashboard-card h3 {
+    color: #94a3b8;
+
+    font-size: 15px;
+}
+
+.dashboard-card h2 {
+
+    margin-top: 12px;
+
+    font-size: 34px;
+
+    color: white;
+}
+
+.dashboard-card.green {
+    border-left: 5px solid #10b981;
+}
+
+.dashboard-card.blue {
+    border-left: 5px solid #3b82f6;
+}
+
+.dashboard-card.purple {
+    border-left: 5px solid #7c3aed;
+}
+
+.dashboard-card p {
+    color: #94a3b8;
+    margin-top: 8px;
+}
+
+.dashboard-card ul {
+    color: #cbd5e1;
+}
+
+
+/* ===========================
+   CUSTOMER MODULE THEME
+=========================== */
+
+.page-container {
+    padding: 25px;
+}
+
+.page-header {
+    margin-bottom: 25px;
+}
+
+.page-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.page-subtitle {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+/* Card */
+
+.module-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.module-card h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Form */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: #cbd5e1;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    background: #0f172a;
+    border: 1px solid #475569;
+    color: white;
+    padding: 12px 14px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+input[type="date"] {
+    color: white;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #7c3aed;
+    box-shadow: 0px 0px 8px rgba(124, 58, 237, 0.5);
+}
+
+/* Button */
+
+.btn-primary {
+    background: #7c3aed;
+    color: white;
+    border: none;
+    margin: 5px 15px;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #8b5cf6;
+}
+
+.btn-primary:disabled {
+    background: #64748b;
+    cursor: not-allowed;
+}
+
+/* Table */
+
+.table-container {
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table thead {
+    background: #172554;
+}
+
+.data-table th {
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+.data-table td {
+    padding: 15px;
+    border-bottom: 1px solid #334155;
+    color: #e2e8f0;
+}
+
+.data-table tbody tr:hover {
+    background: rgba(124, 58, 237, 0.1);
+}
+
+/* Status Badges */
+
+.badge {
+    padding: 6px 12px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge-active {
+    background: #065f46;
+    color: #ffffff;
+}
+
+.badge-inactive {
+    background: #991b1b;
+    color: #ffffff;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-title {
+        font-size: 24px;
+    }
+
+    .module-card {
+        padding: 18px;
+    }
+}
+
+
+/* ==========================
+   USER MANAGEMENT PAGE
+========================== */
+
+.user-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.user-stat-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .2);
+}
+
+.user-stat-card h3 {
+    color: #94a3b8;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.user-stat-card h2 {
+    margin-top: 10px;
+    font-size: 32px;
+    color: #fff;
+}
+
+/* FORM */
+
+.user-form {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 18px;
+    padding: 30px;
+    margin-bottom: 30px;
+
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 18px;
+}
+
+.user-form input,
+.user-form select {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #475569;
+    background: #0f172a;
+    color: white;
+    font-size: 15px;
+}
+
+.user-form input:focus,
+.user-form select:focus {
+    outline: none;
+    border-color: #7c3aed;
+    box-shadow: 0 0 10px rgba(124, 58, 237, .4);
+}
+
+.user-form button {
+    background: #7c3aed;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 14px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s ease;
+}
+
+.user-form button:hover {
+    background: #8b5cf6;
+}
+
+/* TABLE */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1e293b;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid #334155;
+}
+
+thead {
+    background: #172554;
+}
+
+th {
+    padding: 18px;
+    text-align: left;
+    color: white;
+    font-weight: 600;
+}
+
+td {
+    padding: 18px;
+    border-bottom: 1px solid #334155;
+    color: #e2e8f0;
+}
+
+tbody tr {
+    transition: .3s;
+}
+
+tbody tr:hover {
+    background: #111827;
+}
+
+/* ROLE BADGES */
+
+.role-badge {
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.role-admin {
+    background: #581c87;
+    color: white;
+}
+
+.role-dispatcher {
+    background: #1d4ed8;
+    color: white;
+}
+
+.role-driver {
+    background: #0f766e;
+    color: white;
+}
+
+/* STATUS BUTTON */
+
+td button {
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 8px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background: #065f46;
+    transition: .3s;
+}
+
+td button:hover {
+    transform: scale(1.05);
+}
+
+/* PAGE TITLE */
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px) {
+
+    .user-form {
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+.page-header {
+    margin-bottom: 25px;
+}
+
+.page-header p {
+    color: #94a3b8;
+    margin-top: 8px;
+}
+
+
+/* ======================================
+   DRIVER MANAGEMENT PAGE
+====================================== */
+
+.driver-page-header {
+    margin-bottom: 25px;
+}
+
+.driver-page-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.driver-page-header p {
+    color: #94a3b8;
+    font-size: 15px;
+}
+
+/* ======================================
+   STATS CARDS
+====================================== */
+
+.driver-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.driver-stat-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.driver-stat-card h3 {
+    color: #94a3b8;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.driver-stat-card h2 {
+    margin-top: 10px;
+    font-size: 32px;
+    color: white;
+}
+
+/* ======================================
+   DRIVER FORM
+====================================== */
+
+.driver-form {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 18px;
+    padding: 30px;
+    margin-bottom: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 18px;
+}
+
+.driver-form select,
+.driver-form input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #475569;
+    background: #0f172a;
+    color: white;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.driver-form select:focus,
+.driver-form input:focus {
+    outline: none;
+    border-color: #7c3aed;
+    box-shadow: 0 0 10px rgba(124, 58, 237, 0.4);
+}
+
+.driver-form button {
+    background: #7c3aed;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.driver-form button:hover {
+    background: #8b5cf6;
+    transform: translateY(-2px);
+}
+
+/* ======================================
+   TABLE SECTION
+====================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+thead {
+    background: #172554;
+}
+
+th {
+    padding: 18px;
+    text-align: left;
+    color: white;
+    font-weight: 600;
+}
+
+td {
+    padding: 18px;
+    border-bottom: 1px solid #334155;
+    color: #e2e8f0;
+}
+
+tbody tr {
+    transition: 0.3s;
+}
+
+tbody tr:hover {
+    background: #111827;
+}
+
+/* ======================================
+   EMPLOYEE ID
+====================================== */
+
+.employee-badge {
+    background: #312e81;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* ======================================
+   DRIVER STATUS BADGES
+====================================== */
+
+.driver-status {
+    padding: 8px 14px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    display: inline-block;
+}
+
+.driver-available {
+    background: #065f46;
+}
+
+.driver-delivery {
+    background: #b45309;
+}
+
+.driver-offduty {
+    background: #991b1b;
+}
+
+/* ======================================
+   SECTION TITLE CARD EFFECT
+====================================== */
+
+.driver-form,
+.driver-stat-card,
+table {
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ======================================
+   RESPONSIVE
+====================================== */
+
+@media (max-width: 768px) {
+
+    .driver-form {
+        grid-template-columns: 1fr;
+    }
+
+    .driver-page-header h1 {
+        font-size: 26px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+
+
+
+/* ======================================
+   VEHICLE MANAGEMENT PAGE
+====================================== */
+
+.vehicle-page-header {
+    margin-bottom: 25px;
+}
+
+.vehicle-page-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.vehicle-page-header p {
+    margin-top: 8px;
+    color: #94a3b8;
+}
+
+/* ======================================
+   VEHICLE STATS
+====================================== */
+
+.vehicle-stats {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.vehicle-stat-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 18px;
+    padding: 24px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, .2);
+}
+
+.vehicle-stat-card h3 {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.vehicle-stat-card h2 {
+    margin-top: 10px;
+    font-size: 32px;
+    color: white;
+}
+
+/* ======================================
+   VEHICLE FORM
+====================================== */
+
+.vehicle-form {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 18px;
+
+    padding: 30px;
+    margin-bottom: 30px;
+
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 18px;
+}
+
+.vehicle-form input,
+.vehicle-form select {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border-radius: 12px;
+    border: 1px solid #475569;
+
+    background: #0f172a;
+    color: white;
+
+    font-size: 15px;
+
+    transition: .3s;
+}
+
+.vehicle-form input:focus,
+.vehicle-form select:focus {
+
+    outline: none;
+
+    border-color: #7c3aed;
+
+    box-shadow:
+        0 0 10px rgba(124, 58, 237, .4);
+}
+
+.vehicle-form button {
+
+    background: #7c3aed;
+    color: white;
+
+    border: none;
+
+    border-radius: 12px;
+
+    padding: 14px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.vehicle-form button:hover {
+
+    background: #8b5cf6;
+
+    transform: translateY(-2px);
+}
+
+/* ======================================
+   VEHICLE NUMBER BADGE
+====================================== */
+
+.vehicle-number-badge {
+
+    display: inline-block;
+
+    background: #312e81;
+
+    color: white;
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+/* ======================================
+   VEHICLE STATUS
+====================================== */
+
+.vehicle-status {
+
+    display: inline-block;
+
+    padding: 8px 14px;
+
+    border-radius: 25px;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.vehicle-available {
+    background: #065f46;
+}
+
+.vehicle-assigned {
+    background: #b45309;
+}
+
+.vehicle-maintenance {
+    background: #dc2626;
+}
+
+.vehicle-inactive {
+    background: #475569;
+}
+
+/* ======================================
+   CAPACITY BADGE
+====================================== */
+
+.capacity-badge {
+
+    display: inline-block;
+
+    background: #0f172a;
+
+    border: 1px solid #334155;
+
+    color: #cbd5e1;
+
+    padding: 7px 12px;
+
+    border-radius: 18px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+/* ======================================
+   RESPONSIVE
+====================================== */
+
+@media(max-width:768px) {
+
+    .vehicle-form {
+        grid-template-columns: 1fr;
+    }
+
+    .vehicle-page-header h1 {
+        font-size: 26px;
+    }
+}
+
+
+/* ======================================
+   ORDER MANAGEMENT PAGE
+====================================== */
+
+.order-page-header {
+    margin-bottom: 25px;
+}
+
+.order-page-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.order-page-header p {
+    margin-top: 8px;
+    color: #94a3b8;
+}
+
+.select_cust {
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* ======================================
+   ORDER STATS
+====================================== */
+
+.order-stats {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.order-stat-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    padding: 24px;
+    border-radius: 18px;
+
+    box-shadow:
+        0px 8px 25px rgba(0, 0, 0, .2);
+}
+
+.order-stat-card h3 {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.order-stat-card h2 {
+    margin-top: 10px;
+    color: white;
+    font-size: 32px;
+}
+
+/* ======================================
+   ORDER FORM
+====================================== */
+
+.order-form {
+
+    background: #1e293b;
+
+    border: 1px solid #334155;
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    margin-bottom: 30px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 18px;
+}
+
+.order-form h3 {
+
+    grid-column: 1/-1;
+
+    color: #ffffff;
+
+    margin-top: 10px;
+
+    margin-bottom: 5px;
+
+    font-size: 18px;
+}
+
+.order-form input,
+.order-form select {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border-radius: 12px;
+
+    border: 1px solid #475569;
+
+    background: #0f172a;
+
+    color: white;
+
+    font-size: 15px;
+
+    transition: .3s;
+}
+
+.order-form input:focus,
+.order-form select:focus {
+
+    outline: none;
+
+    border-color: #7c3aed;
+
+    box-shadow:
+        0px 0px 10px rgba(124, 58, 237, .4);
+}
+
+.order-form button {
+
+    background: #7c3aed;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.order-form button:hover {
+
+    background: #8b5cf6;
+
+    transform: translateY(-2px);
+}
+
+/* ======================================
+   ORDER NUMBER BADGE
+====================================== */
+
+.order-badge {
+
+    display: inline-block;
+
+    background: #312e81;
+
+    color: white;
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+/* ======================================
+   PRIORITY BADGES
+====================================== */
+
+.priority {
+
+    padding: 8px 14px;
+
+    border-radius: 25px;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    display: inline-block;
+}
+
+.priority-low {
+    background: #065f46;
+}
+
+.priority-medium {
+    background: #b45309;
+}
+
+.priority-high {
+    background: #dc2626;
+}
+
+/* ======================================
+   STATUS BADGES
+====================================== */
+
+.order-status {
+
+    padding: 8px 14px;
+
+    border-radius: 25px;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    display: inline-block;
+}
+
+.status-created {
+    background: #2563eb;
+}
+
+.status-assigned {
+    background: #b45309;
+}
+
+.status-dispatched {
+    background: #7c3aed;
+}
+
+.status-delivered {
+    background: #059669;
+}
+
+.status-cancelled {
+    background: #dc2626;
+}
+
+/* ======================================
+   SECTION HEADER
+====================================== */
+
+.order-section-title {
+    margin-bottom: 15px;
+    color: white;
+}
+
+/* ======================================
+   RESPONSIVE
+====================================== */
+
+@media(max-width:768px) {
+
+    .order-form {
+        grid-template-columns: 1fr;
+    }
+
+    .order-page-header h1 {
+        font-size: 26px;
+    }
+
+}
