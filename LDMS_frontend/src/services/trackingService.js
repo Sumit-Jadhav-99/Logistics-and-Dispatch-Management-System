@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API =
-"http://localhost:5000/api/tracking";
+"https://logistics-and-dispatch-management-system.onrender.com/api/tracking";
 
 const getHeaders = () => ({
 headers:{
