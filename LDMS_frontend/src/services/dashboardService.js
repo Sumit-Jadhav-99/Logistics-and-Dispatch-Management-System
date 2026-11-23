@@ -27,7 +27,7 @@ export const getDriverDashboard =
 
         const response =
             await axios.get(
-                "http://localhost:5000/api/dashboard/driver",
+                "https://logistics-and-dispatch-management-system.onrender.com/api/dashboard/driver",
                 {
                     headers: {
                         Authorization:
@@ -46,7 +46,7 @@ export const getDispatcherDashboard =
         const response =
             await axios.get(
 
-                "http://localhost:5000/api/dashboard/dispatcher",
+                "https://logistics-and-dispatch-management-system.onrender.com/api/dashboard/dispatcher",
 
                 {
                     headers: {
