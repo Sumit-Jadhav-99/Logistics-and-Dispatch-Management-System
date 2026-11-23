@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/users";
+const API_URL = "https://logistics-and-dispatch-management-system.onrender.com/api/users";
 
 const getHeaders = () => ({
   headers: {
