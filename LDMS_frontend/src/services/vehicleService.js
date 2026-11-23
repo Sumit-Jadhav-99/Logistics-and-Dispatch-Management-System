@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API =
-"http://localhost:5000/api/vehicles";
+"https://logistics-and-dispatch-management-system.onrender.com/api/vehicles";
 
 const getHeaders = () => ({
  headers:{
